@@ -1,0 +1,203 @@
+body {
+  font: 95%/1.45em "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
+  color: black;
+  color: black;
+}
+
+.mquery{
+  clear: both;
+  background-color: white;
+  padding: 1em;
+  -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.mquery table{
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+.mquery table .collapsed:before{
+      content: '-' !important;
+      background-color: #d33333 !important;
+    }
+
+.mquery table .group:before {
+      top: 5px;
+      left: 4px;
+      height: 1em;
+      width: 1em;
+      position: absolute;
+      color: white;
+      border: 2px solid white;
+      -webkit-border-radius: 1em;
+              border-radius: 1em;
+      -webkit-box-shadow: 0 0 3px #444;
+              box-shadow: 0 0 3px #444;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      text-align: center;
+      text-indent: 0 !important;
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1em;
+      content: '+';
+      background-color: #31b131;
+    }
+
+.mquery table th{
+      display: table-cell;
+      color: black;
+      color: black;
+      padding: 0.5em 0.8em;
+      background-repeat: no-repeat;
+      background-position: center right;
+      text-align: left;
+    }
+
+.mquery table thead .sorting_asc {
+        background-image: url(../images/sort_asc.png);
+      }
+
+.mquery table thead .sorting {
+        background-image: url(../images/sort_both.png);
+      }
+
+.mquery table thead th{
+        border-bottom: 1px solid #111;
+        border-bottom: 1px solid #111;
+      }
+
+.mquery table th.input{
+      padding: 0.25em 4px;
+    }
+
+.mquery table th.input input{
+        width: 100%;
+      }
+
+.mquery table tfoot th{
+        border-top: 1px solid #111;
+        border-top: 1px solid #111;
+      }
+
+.mquery table tfoot th.group:first-child {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+
+.mquery table tfoot th.group:before {
+        top: 8px;
+      }
+
+.mquery table tbody tr{
+        display: table-row;
+      }
+
+.mquery table tbody tr td{
+          display: table-cell;
+          padding: 0.3em 0.5em;
+          white-space: nowrap;
+          -webkit-box-sizing: content-box;
+                  box-sizing: content-box;
+        }
+
+.mquery table tbody tr td.group:first-child {
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+        }
+
+.mquery table tbody tr.odd{
+        background-color: #f9f9f9;
+      }
+
+.mquery table tbody tr.odd >.sorting_1{
+          background-color: #f1f1f1;
+        }
+
+.mquery table tbody tr.even{
+        background-color: #fff;
+      }
+
+.mquery table tbody tr.even >.sorting_1 {
+          background-color: #fafafa;
+        }
+
+.mquery .info{
+    clear: both;
+    padding-top: 0.755em;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  }
+
+.mquery .paginate{
+    text-align: right;
+    padding-top: 0.25em;
+    float: right;
+  }
+
+.mquery .paginate .paginate_button {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      min-width: 1.5em;
+      padding: 0.5em 1em;
+      margin-left: 2px;
+      text-align: center;
+      text-decoration: none !important;
+      cursor: pointer;
+      color: #333 !important;
+      border: 1px solid transparent;
+      -webkit-border-radius: 2px;
+              border-radius: 2px
+    }
+
+.mquery .paginate .paginate_button.current {
+  color: #333 !important;
+  border: 1px solid #979797;
+  background-color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+  background: -webkit-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+  background: -o-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+  background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+}
+
+.mquery .groupbar .group_btn {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      min-width: 1.5em;
+      padding: 0.5em 1em;
+      margin-left: 2px;
+      text-align: center;
+      text-decoration: none !important;
+      cursor: pointer;
+      color: #333 !important;
+      border: 1px solid transparent;
+      -webkit-border-radius: 2px;
+              border-radius: 2px
+    }
+
+.mquery .groupbar .group_btn.selected {
+  color: #333 !important;
+  border: 1px solid #979797;
+  background-color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+  background: -webkit-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+  background: -o-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+  background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+}
+
+.dt-body-right{
+  text-align: right;
+}
