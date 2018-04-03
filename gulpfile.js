@@ -6,7 +6,20 @@ var precss = require("precss");
 var cssnano = require('cssnano');
 var rename = require('gulp-rename');
 
-gulp.task('default', function () {
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+
+gulp.task("js",function(){
+    // 把1.js和2.js合并压缩为main.js，输出到dest/js目录下
+    return gulp.src(['./src/javascripts/mquery.js', './src/javascripts/mq.field.js'])
+        .pipe(concat('mquery.js'))
+        .pipe(gulp.dest("./public/javascripts"))
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./public/javascripts'));
+});
+
+gulp.task('default', ['js'], function () {
     var processors = [
         precss,
         require("postcss-cssnext")({

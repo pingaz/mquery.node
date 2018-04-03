@@ -10,16 +10,19 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "hbs": "~4.0.1",
-    "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "http-errors": "^1.6.3",
+    "morgan": "~1.9.0",
+    "request": "^2.85.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "cssgrace": "^3.0.0",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
     "postcss": "^6.0.21",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-cssnext": "^3.1.0",

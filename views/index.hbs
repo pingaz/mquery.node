@@ -1,2 +1,14 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="mquery">
+    <div class="wrapper">
+        <div class="toolbar"><h3>{{title}}</h3></div>
+        <form method="post" action="/settings">
+            <div>
+                <h3><input type="text" name="remote" value="{{remote}}" title="Remote Path"/></h3>
+            </div>
+            <div>
+                <input type="submit" value="Test & Submit"/>
+                <label class="error">{{error}}</label>
+            </div>
+        </form>
+    </div>
+</div>

@@ -20,6 +20,7 @@ body {
     box-sizing: content-box;
     border-collapse: separate;
     border-spacing: 0;
+    width: 100%;
 
     .collapsed::before{
       content: '-' !important;
