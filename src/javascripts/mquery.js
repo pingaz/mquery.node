@@ -33,7 +33,7 @@ function mq_createBody(bodyElement, resultTable){
     }
 }
 
-var MQuery = function(element, options){
+var MQuery = function(element, finderId, options){
     /* This is a private declaration, isn't it ? */
     var settings = {
         pageSize: 50
@@ -43,8 +43,8 @@ var MQuery = function(element, options){
     this.headerElement = $('<thead>');
     this.bodyElement = $('<tbody>');
     this.options = $.extend(settings, options);
-    this.loadUrl = '/s/pnp.mquery.finder.test01';
-    this.queryUrl = '/q/pnp.mquery.finder.test01';
+    this.loadUrl = '/s/'+finderId;
+    this.queryUrl = '/q/'+finderId;
 
     //append head, body and foot
     this.element.empty();

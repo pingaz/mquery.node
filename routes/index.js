@@ -16,7 +16,7 @@ router.post('/settings', function (req, res, next) {
         request(remote, function (error, response, body) {
             if (!error && response.statusCode === 200) {
                 config.setRemote(remote);
-                res.redirect('/');
+                res.redirect('/settings');
                 return;
             }else if(error.code === 'ECONNREFUSED'){
                 err_info = '连接失败，请检查地址是否正确。';
@@ -35,7 +35,7 @@ router.post('/settings', function (req, res, next) {
 /* GET home page. */
 router.get('/:id', function (req, res, next){
     var finderId = req.params.id;
-    res.render('search', {title: 'Express'});
+    res.render('search', {title: 'Express', id: finderId});
 });
 
 /* GET search by id. */

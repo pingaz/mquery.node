@@ -8,7 +8,9 @@ body {
   font: 95%/1.45em "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif !important;
   color: var(--text-color);
 }
-
+.scroll{
+  overflow-x: auto;
+}
 .mquery{
   clear: both;
   background-color: white;
@@ -62,6 +64,7 @@ body {
       }
       th{
         border-bottom: var(--line);
+        text-align: center;
       }
     }
     th.input{
@@ -98,6 +101,9 @@ body {
           position: relative;
           padding-left: 30px;
           cursor: pointer;
+        }
+        td.number{
+          text-align: right;
         }
       }
       tr.odd{
